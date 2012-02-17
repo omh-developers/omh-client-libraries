@@ -1,1 +1,5 @@
-README: omh-client-libraries
+README: Open mHealth Client Libraries
+
+These Javascript Libraries provide utilities that are broken down into two categories, Data Processing Units (DPUs) and Data Visualization Units (DVUs).
+
+ 
