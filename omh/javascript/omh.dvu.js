@@ -149,6 +149,7 @@ omh.dvu = function(vis_container){
         if(i%skip == 0){
           i = i-min
           y_ticks.append('line')
+          .style('stroke','#eee')
           .style('clip-path','url('+self.container+'_path_clip)')
           .attr('x1','0').attr('y1',i*inc)
           .attr('x2','100%').attr('y2',i*inc)
@@ -201,6 +202,7 @@ omh.dvu = function(vis_container){
           i = i-min
           x_ticks.append('line')
           .style('clip-path','url('+self.container+'_path_clip)')
+          .style('stroke','#eee')
           .attr('x1',i*inc).attr('y1',0)
           .attr('x2',i*inc).attr('y2','100%')
         }

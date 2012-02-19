@@ -16,6 +16,17 @@ and open the template in the editor.
     <script src="javascript/omh.dpu.js" type="text/javascript"></script>
     <script src="javascript/omh.dpu.opencpu.js" type="text/javascript"></script>
     <script src="javascript/omh.dvu.js" type="text/javascript"></script>
+    <style type="text/css">
+      h2{
+        text-transform: capitalize;
+      }
+      #counding_rect{
+      }
+      #dvu_wrap{
+        width: 800px;
+        height: 450px;
+      }
+    </style>
   </head>
   <body>
     <h1>OMH APIs Test Page</h1>
@@ -33,6 +44,7 @@ and open the template in the editor.
         //set x and y axis unit ranges and titles
         dvu.yRange(0,10).yTitle('Y-AXIS')
         dvu.xRange(0,10).xTitle('X-AXIS')
+        dvu.xRules(true).yRules(true)
 
         //data is just an object wrapping y and y arrays
         data = { x:[],y:[] }
@@ -69,6 +81,7 @@ and open the template in the editor.
 
         var dvu = omh.dvu('#dvu_wrap')
         var wid = dvu.width(), hgt = dvu.height()
+        dvu.xRules(true).yRules(true)
         dvu.yRange(0,10).yTitle('Y-AXIS')
         dvu.xRange(0,10).xTitle('X-AXIS')
         var data_string = ""
